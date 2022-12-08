@@ -80,7 +80,7 @@ public class SpaceTravel {
 
                     if (travelDirection.equals("a")) {
                         calendar.add(Calendar.SECOND, (int) travelTimeInKmPerS);
-                        System.out.println("You leave " + departure.getName() + " on " + dateFormat.format(date.getTime()) + " and arrive on " + dateFormat.format(new Date(date.getTime() + (long) travelTimeInKmPerS * 1000)));} else {
+                        System.out.println("You leave " + departure.getName() + " on " + dateFormat.format(date.getTime()) + " and arrive on " + dateFormat.format(new Date(date.getTime() + (long) travelTimeInKmPerS * 1000)));
                     } else {
                         calendar.add(Calendar.SECOND, (int) -travelTimeInKmPerS);
                         System.out.println("You leave " + arrival.getName() + " on " + dateFormat.format(date.getTime()) + " and arrive on " + dateFormat.format(new Date(date.getTime() - (long) travelTimeInKmPerS * 1000)));
